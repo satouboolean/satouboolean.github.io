@@ -1,3 +1,18 @@
+# Index
+- [Game]
+- [Computing]
+- [Daily Life]
+- [Travel]
+- [Learning]
+- [Anime]
+
+[Game]: ./game/index.md
+[Computing]: ./programming/index.md
+[Daily Life]: ./dailyLife/index.md
+[Travel]: ./travel/Japan.md
+[Learning]: ./learn/Learning.md
+[Anime]: ./Anime/animeReview.md
+
 # Welcome to MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).

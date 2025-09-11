@@ -109,3 +109,9 @@ git remote add origin https://github.com/{accountname}/{accountname}.github.io.g
 ```
 git push -u -origin main
 ```
+
+## Deploy to github page
+```
+mkdocs build
+mkdocs gh-deploy
+```
