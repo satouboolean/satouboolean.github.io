@@ -1,3 +1,7 @@
+---
+title: Home
+---
+
 # Index
 - [Game]
 - [Computing]

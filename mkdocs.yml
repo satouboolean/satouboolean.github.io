@@ -4,6 +4,7 @@ theme:
   favicon: img/favicon
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.path
@@ -26,53 +27,53 @@ theme:
 
 plugins:
   - search
+  - tags
 
 search:
   exclude: true
+  # nav:
+  #   - Home:
+  #       - index.md
+  #       - Portals: Portal.md
+  #       - Todo: Others/ToDoList.md
+  #   - Anime:
+  #       - Anime/animeReview.md
+  #       - HeavenBurnRed:
+  #           - あの娘ぼくが唯一の光だと言ったらどんな顔するだろう: Anime/HBR3rdAnniEventStory.md
+  #   - Computing:
+  #       - compute/index.md
+  #       - Flutter: compute/Flutter.md
+  #       - Typescript: compute/Typescript.md
+  #       - Web Hosting: compute/webHosting/index.md
+  #       - Tailwind: compute/tailwind.md
+  #       - Google Spreadsheet: compute/GoogleSpreadSheet.md
+  #   - Daily Life:
+  #       - Traffic:
+  #           - dailyLife/Traffic/TrafficPrice.md
+  #           - 鑽石山: dailyLife/Traffic/DiamondHill.md
+  #           - 佐敦: dailyLife/Traffic/Jordon.md
+  #           - 九龍塘: dailyLife/Traffic/KowloonTong.md
+  #           - 觀塘: dailyLife/Traffic/KwunTong.md
+  #           - 黃大仙: dailyLife/Traffic/WongTaiSin.md
+  #           - 石門: dailyLife/Traffic/ShekMun.md
+  #           - 宋皇臺: dailyLife/Traffic/SungWongToi.md
+  #   - Game:
+  #       - ヘブンバンズレッド:
+  #           - SkullFeather: game/hbr/skullFeather.md
+  #           - Damage Calculation: game/hbr/HvbnNote.md
+  #           - Narashino Dorm: game/hbr/nanashino.md
+  #       - G Generation Eternal:
+  #           - G Generation Table: game/gGen/G-Generation.md
+  #           - EternalRoad: game/gGen/EternalRoad.md
+  #   - Learning:
+  #       - learn/Learning.md
+  #       - Live2D:
+  #           - Basic: learn/live2d/RedSodaLive2D/Basics.md
+  #           - Eye: learn/live2d/RedSodaLive2D/Eye.md
+  #           - live2DTutor: learn/live2d/live2dTutor.md
+  #   - Music:
+  #       - music/index.md
+  #       - HeavenBurnRed Lyrics: music/HeavenBurnLyrics.md
 
-nav:
-  - Home:
-      - index.md
-      - Portals: Portal.md
-      - Todo: ToDoList.md
-  - Anime:
-      - Anime/animeReview.md
-      - HeavenBurnRed:
-          - あの娘ぼくが唯一の光だと言ったらどんな顔するだろう: Anime/HBR3rdAnniEventStory.md
-  - Computing:
-      - compute/index.md
-      - Flutter: compute/Flutter.md
-      - Typescript: compute/Typescript.md
-      - Web Hosting: compute/webHosting/index.md
-      - Tailwind: compute/tailwind.md
-      - Google Spreadsheet: compute/GoogleSpreadSheet.md
-  - Daily Life:
-      - Traffic:
-          - dailyLife/Traffic/TrafficPrice.md
-          - 鑽石山: dailyLife/Traffic/DiamondHill.md
-          - 佐敦: dailyLife/Traffic/Jordon.md
-          - 九龍塘: dailyLife/Traffic/KowloonTong.md
-          - 觀塘: dailyLife/Traffic/KwunTong.md
-          - 黃大仙: dailyLife/Traffic/WongTaiSin.md
-          - 石門: dailyLife/Traffic/ShekMun.md
-          - 宋皇臺: dailyLife/Traffic/SungWongToi.md
-  - Game:
-      - ヘブンバンズレッド:
-          - SkullFeather: game/hbr/skullFeather.md
-          - Damage Calculation: game/hbr/HvbnNote.md
-          - Narashino Dorm: game/hbr/nanashino.md
-      - G Generation Eternal:
-          - G Generation Table: game/gGen/G-Generation.md
-          - EternalRoad: game/gGen/EternalRoad.md
-  - Learning:
-      - learn/Learning.md
-      - Live2D:
-          - Basic: learn/live2d/RedSodaLive2D/Basics.md
-          - Eye: learn/live2d/RedSodaLive2D/Eye.md
-          - live2DTutor: learn/live2d/live2dTutor.md
-  - Music:
-      - music/index.md
-      - HeavenBurnRed Lyrics: music/HeavenBurnLyrics.md
-
-  - Travel:
-      - travel/Japan.md
+  #   - Travel:
+  #       - travel/Japan.md

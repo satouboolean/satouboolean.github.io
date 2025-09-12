@@ -1,6 +1,7 @@
 ---
 title: Learning Video
-tags: Learning
+tags:
+  - Learning
 ---
 ## Change Brain
 
