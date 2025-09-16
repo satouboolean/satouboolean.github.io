@@ -1,3 +1,9 @@
+---
+title: Expanded
+tags:
+  - Flutter
+---
+
 # Expanded
 
 Used as a child of Row, Column or Flex to fill available space.

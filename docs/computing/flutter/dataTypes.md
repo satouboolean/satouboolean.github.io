@@ -1,3 +1,9 @@
+---
+title: DataTypes
+tags:
+  - Flutter
+---
+
 # DataTypes
 
 | Type name | Usage     | Explaination       |
