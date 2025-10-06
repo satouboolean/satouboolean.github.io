@@ -1,3 +1,9 @@
+---
+title: Scaffold
+tags:
+  - Flutter
+---
+
 # Scaffold
 
 The Scaffold is designed to be a top level container for a flutter app.

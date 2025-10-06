@@ -1,3 +1,10 @@
+---
+title: Table Calender
+tags:
+  - Flutter
+  - Plugin
+---
+
 # Table Calender
 
 [Docs](https://pub.dev/packages/table_calendar)

@@ -1,3 +1,9 @@
+---
+title: StatelessWidget
+tags:
+  - Flutter
+---
+
 # StatelessWidget
 
 The widget class without state support
