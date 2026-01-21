@@ -6,7 +6,7 @@ tags:
   - Testing
 categories: programming
 ---
- 
+  
 ## Setup and run [Playwright](https://playwright.dev/)
 
 ### Install playwright

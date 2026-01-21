@@ -28,7 +28,9 @@ categories: song
 | ディベートソルジャー                              |               |                                 |
 | Welcome to the Front Line!              | やなぎなぎ         | 鳴らせ~じゃかじゃん                      |
 | オールトの雲                                  |               |                                 |
+
 ## Frieren OST
+
 | OST                          |
 | ---------------------------- |
 | A Well Earned Celebration    |
@@ -78,14 +80,7 @@ categories: song
 | 声なき魚            |
 | 空白とカタルシス        |
 | 名もなき何もかも        |
-|                 |
-|                 |
-|                 |
-|                 |
-|                 |
-|                 |
-|                 |
-|                 |
+
 ### アニメソン
 
 | 歌名                                                   | 歌手               | アニメ                     | Remark                       |

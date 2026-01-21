@@ -29,9 +29,7 @@ Turn 6: BREAK する ?
 シャロ専用　タマ　オープン・ザ・ロード　ひさめ　とある衝撃 → 攻撃
 
 [source](https://www.youtube.com/watch?v=2wT4BcYPFrg)
-{% asset_img team1.png %}
 ![Team1](team1.png)
-{% asset_img team2.png %}
 ![Team2](team2.png)
 ## First DP
 

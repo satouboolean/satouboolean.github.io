@@ -31,6 +31,7 @@ categories: travel
 | 洗面乳  | Optional              |
 | 飛機頸枕 | Optional              |
 | 常備藥  | Optional              |
+
 ### 電子類
 
 | 物品            | 備註       |
