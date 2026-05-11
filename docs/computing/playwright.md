@@ -6,7 +6,7 @@ tags:
   - Testing
 categories: programming
 ---
-  
+
 ## Setup and run [Playwright](https://playwright.dev/)
 
 ### Install playwright
@@ -22,13 +22,39 @@ npx playwright test --ui
 ```
 
 ### Run test
+
 ```Powershell
 npx playwright test `filename`.spec.ts --config=`config file name`.config.ts --workers=4 --retries=3 --project="mschromium" --trace on -g "(?=.\*zh_CN)" --headed
 ```
 
-
 ```Powershell
 npx playwright test merchant-directory.spec.ts --config=playwright.monocart.config.ts --workers=4 --retries=3 --project="mschromium" --trace on -g "(?=.*zh_CN)" --headed
+```
+
+## Standard ts script with playwright
+
+```Typescript
+import { chromium } from 'playwright';
+
+(async () => {
+	const browser = await chromium.launch({ headless: false });
+	const context = await browser.newContext({ storageState: 'auth.json' });
+	const page = await context.newPage();
+
+	console.log(`\nStart `);
+	try {
+		//do sth
+	} catch (err) {
+	  console.log(err);
+	} finally {
+		// finally backup
+	}
+
+
+  await browser.close();
+  console.log('\nAll tasks finished!');
+})();
+
 ```
 
 ## Basic Syntax
@@ -86,7 +112,6 @@ test.describe("GroupName", () => {
 | filter by inner text                   |                           | await page.locator('//div\[contains(text(),"keyword")\]')             |     |
 | following sibling                      | /following-sibling::      | {xpath}//following-sibling::div                                       |     |
 
-
 ### CSS Conditions
 
 | Conditions     | Explaination                                  | Example                                                           |
@@ -103,9 +128,11 @@ test.describe("GroupName", () => {
 | :nth-match     | nth match 1-based                             | await page.locator(':nth-match(:text("innerText"), 1)')           |
 
 ### locator actions
+
 | Actions         | Explaination                                                                | Example                             |
 | --------------- | --------------------------------------------------------------------------- | ----------------------------------- |
 | .click(option?) | optional to specify position of element<br>x,y where 0,0 is top-left corner | await page.locator.click({x:1,y:1}) |
+
 ## [Fixture](https://www.youtube.com/watch?v=2O7dyz6XO2s)
 
 Create a custom `test` object which extend the original `test()` function from playwright
@@ -152,15 +179,19 @@ const { test , expect } = require("./setup")
 ```
 
 ## Test mode
+
 - serial
 - parallel
 - default
+
 ```Typescript
 test.describe.configure({ mode: "serial" });
 ```
 
 ## Dialog
+
 Playwright default to dismiss dialog automatically. So if we want to handle the dialog, we need to setup a dialog listener before the action which trigger dialog
+
 ```Typescript
 aiPage.page.on('dialog', (dialog) => dialog.accept());
 ```

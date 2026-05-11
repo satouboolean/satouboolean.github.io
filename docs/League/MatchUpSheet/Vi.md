@@ -6,6 +6,8 @@ tags:
 
 # Leathality Vi (last up date 11/5/2026)
 
+Charge up Q at 00:12 to get faster to blush
+
 ### Default set up
 
 Flash Ignite
@@ -17,9 +19,11 @@ Treasure hunter
 Shield bash
 Bone plating
 
-| Match up | 1   | 2   | 3   | 4   | 5   |
-| -------- | --- | --- | --- | --- | --- |
-| Darius   | 1   | 2   | 3   |
+| Match up | Difficulty | All in timing      | All in level | When to stop trade        |
+| -------- | ---------- | ------------------ | ------------ | ------------------------- |
+| Darius   | Hard       | never              | 1 if start Q |                           |
+| Jayee    | Normal     | uses some cooldown | 1            |                           |
+| Illaoi   | Easy       | no E               | 1            | Built Some armor + have R |
 
 ## Vi vs Darius
 
@@ -37,7 +41,7 @@ Flash Ghost
 
 First Strike
 Cash back
-triple option
+Triple Potion
 cosmetic
 Sudden inpact
 Treasure Hunter

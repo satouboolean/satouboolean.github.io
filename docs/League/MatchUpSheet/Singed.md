@@ -10,8 +10,8 @@ tags:
 
 Flash Ghost
 
-| Match up | 1   | 2   | 3   | 4   | 5   |
-| -------- | --- | --- | --- | --- | --- |
+| Match up | 1   | 2   | 3   |
+| -------- | --- | --- | --- |
 | Darius   | 1   | 2   | 3   |
 
 ## Singed vs Darius
