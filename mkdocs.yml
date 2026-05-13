@@ -1,4 +1,5 @@
 site_name: 山脇様の実験室
+docs_dir: docs/shared
 theme:
   name: material
   favicon: img/favicon
