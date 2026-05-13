@@ -1,18 +1,45 @@
-steps:
-  - name: Checkout Repository
-    uses: actions/checkout@v4
-    with:
-      token: ${{ secrets.SUBMODULE_TOKEN }}
-      submodules: "true" # 🟢 CRUCIAL: Instructs the runner to clone the posts submodule
-      fetch-depth: 0
+name: Deploy MkDocs Blog
 
-  - name: Setup Python
-    uses: actions/setup-python@v5
-    with:
-      python-version: "3.x"
+on:
+  push:
+    branches:
+      - main # Triggers the build every time you push code to main
+  schedule:
+    - cron: "0 0 * * *" # Automatically runs once every 24 hours (Midnight UTC)
+  workflow_dispatch: # Enables the manual "Run workflow" button in GitHub
 
-  - name: Install MkDocs and Theme
-    run: pip install mkdocs-material
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
 
-  - name: Build and Deploy
-    run: mkdocs gh-deploy --force
+    steps:
+      # 1. Checkout the parent repository AND pull the cross-account submodule files
+      - name: Checkout Project Repo
+        uses: actions/checkout@v4
+        with:
+          # 🟢 Authenticates against Account A using your saved repository secret
+          token: ${{ secrets.SUBMODULE_TOKEN }}
+          submodules: "true" # Automatically clones your docs/shared repo
+          fetch-depth: 0 # Fetches full history so Git tracking works seamlessly
+
+      # 2. Set up a secure, stable Python environment
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      # 3. Install MkDocs and the Material Theme
+      - name: Install Dependencies
+        run: |
+          pip install mkdocs-material
+
+      # 4. Pull the latest submodule updates directly from Account A's remote branch
+      - name: Pull Latest Submodule Content
+        run: |
+          git submodule update --init --recursive --remote
+
+      # 5. Build the static site and deploy it straight to GitHub Pages
+      - name: Build and Deploy to GitHub Pages
+        run: |
+          # The --force flag ensures it overwrites old deployment caches smoothly
+          mkdocs gh-deploy --force
