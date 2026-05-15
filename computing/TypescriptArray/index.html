@@ -2530,6 +2530,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#filterboolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter(Boolean)
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5075,6 +5086,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#filterboolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter(Boolean)
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5243,6 +5265,12 @@ do things with index and item
 <pre><code class="language-typescript">const possibleValue = [&quot;Yamawaki&quot;, &quot;Wakki&quot;, &quot;Satouburian&quot;]
 
 type yamawaki = typeof possibleValue[number]; //&quot;Yamawaki&quot; | &quot;Wakki&quot; | &quot;Satouburian&quot;
+</code></pre>
+<h2 id="filterboolean">Filter(Boolean)</h2>
+<pre><code class="language-typescript">const array:Array&lt;string|null&gt; = ['string1','string2',null,'string4']
+
+array.filter(Boolean)
+// array = ['string1','string2','string4'] now and it is Array&lt;string&gt; excluding null in Array
 </code></pre>
 
 
